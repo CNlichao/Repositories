@@ -1,1 +1,0 @@
-native2ascii -encoding gbk  messages_zh.txt > messages_zh_CN.properties
