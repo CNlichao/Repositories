@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<selector xmlns:android="http://schemas.android.com/apk/res/android">
-	
-	<item android:drawable="@drawable/btn_nav_btn02_click" android:state_checked="true" android:state_enabled="true"/>
-    <item android:drawable="@drawable/btn_nav_btn02_normal" android:state_checked="false"/>
-
-</selector>
