@@ -1,0 +1,146 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.hrcx.selfphotovideocompare"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="15" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.CAMERA" >
+    </uses-permission>
+
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+    <!-- 闪光灯 -->
+    <uses-permission android:name="android.permission.FLASHLIGHT" >
+    </uses-permission>
+    <!-- 访问网络状态的权限 -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <!-- 访问WIFI网络状态的权限 -->
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <!--
+    <uses-permission android:name="android.permission.WRITE_APN_SETTINGS" >
+    </uses-permission>
+    -->
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" >
+    </uses-permission>
+
+    <application
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <uses-library
+            android:name="com.google.android.maps"
+            android:required="false" />
+
+        <activity
+            android:name=".ui.MainActivity"
+            android:label="@string/title_activity_main" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ui.LoginActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".ui.MainTabActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".ui.NoVerificationShowActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".ui.NoVerificationShowActivityGroup"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".ui.TabGroupActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".ui.TotalShowActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".ui.TotalShowActivityGroup"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".ui.VerificationShowActivityGroup"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".ui.VerivicationShowActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".ui.SearchShowActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".ui.CameraImage"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.CommitPhotoActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.WaitingActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.CheckPhotoShowActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.CameraRecordActivity"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".ui.TypeSelectActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.RegisterIdValidateActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.RegisterTakePhoto"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.RegisterCommitPhoto"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.RegisterWaitingActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.RegisterShowPhotoActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.RegisterInfo"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.SelfMainActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".ui.SelfAusHistory"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".ui.RecommendedActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+
+        <service android:name=".ui.LocationSvc" />
+    </application>
+
+</manifest>

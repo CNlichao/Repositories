@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="linkword_array">
+        <item>已阅</item>
+        <item>阅处</item>
+        <item>阅办</item>
+        <item>阅示</item>
+        <item>跟进</item>
+        <item>办理</item>
+        <item>阅</item>
+        <item>先提出意见</item>
+        <item>研处</item>
+        <item>研究</item>
+        <item>会</item>
+        <item>会签</item>
+        <item>会办</item>
+        <item>签发</item>
+        <item>商</item>
+    </string-array>
+
+</resources>

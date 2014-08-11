@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/loginRoot"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/bgtemp"
+    android:gravity="center_horizontal"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/RelativeLayout01"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:paddingBottom="1.0px"
+        android:paddingTop="1.0px" >
+
+        <ImageView
+            android:id="@+id/faceImg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:background="@drawable/login_head"
+            android:contentDescription="@+id/faceImg" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/RelativeLayout02"
+        android:layout_width="257dp"
+        android:layout_height="fill_parent"
+        android:gravity="center_horizontal"
+        android:paddingBottom="1.0px"
+        android:paddingTop="1.0px" >
+
+        <EditText
+            android:id="@+id/edit_loginName"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"         
+            android:background="@drawable/edit_login"
+            android:hint="@string/strInputAccHint"
+            android:maxLength="10"
+            android:paddingLeft="45.0sp"
+            android:saveEnabled="true"
+            android:singleLine="true" >
+
+            <requestFocus />
+        </EditText>
+
+        <TextView
+            android:id="@+id/TextView01"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/edit_loginName"
+            android:layout_alignLeft="@+id/edit_loginName"
+            android:layout_alignTop="@+id/edit_loginName"
+            android:layout_marginRight="15.0sp"
+            android:gravity="center_vertical"
+            android:paddingLeft="7.0sp"
+            android:text="@string/lab_Login_Name"
+            android:textColor="#ff3f3f3f"
+            android:textSize="16.0dip" />
+
+        <EditText
+            android:id="@+id/edit_loginPawd"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/edit_loginName"
+            android:layout_alignRight="@+id/edit_loginName"
+            android:layout_below="@+id/edit_loginName"
+            android:layout_marginRight="1.0dip"
+            android:background="@drawable/edit_login"
+            android:inputType="textPassword"
+            android:maxLength="16"
+            android:paddingLeft="45.0sp"
+            android:saveEnabled="false"
+            android:singleLine="true" />
+
+        <TextView
+            android:id="@+id/TextView02"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/edit_loginPawd"
+            android:layout_alignLeft="@+id/edit_loginPawd"
+            android:layout_alignTop="@+id/edit_loginPawd"
+            android:gravity="center_vertical"
+            android:paddingLeft="7.0sp"
+            android:text="@string/lab_Login_Pawd"
+            android:textColor="#ff3f3f3f"
+            android:textSize="16.0dip" />
+
+         <Button
+             android:id="@+id/btn_login"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_below="@+id/edit_loginPawd"
+             android:layout_centerHorizontal="true"
+             android:layout_marginTop="31dp"
+             android:background="@drawable/login_button" />
+      
+    </RelativeLayout>
+
+</LinearLayout>

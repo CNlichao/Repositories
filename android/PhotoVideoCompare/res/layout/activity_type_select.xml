@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background" >
+
+    <RelativeLayout
+        android:id="@+id/rl_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/titleback" >
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/type_select_title"
+            android:textColor="@android:color/white" />
+    </RelativeLayout>
+
+    <GridView
+        android:id="@+id/gv_product"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rl_title"
+        android:layout_marginBottom="15dip"
+        android:layout_marginLeft="10dip"
+        android:layout_marginRight="10dip"
+        android:layout_marginTop="15dip"
+        android:columnWidth="80dp"
+        android:fadingEdgeLength="0dip"
+        android:gravity="center"
+        android:listSelector="@android:color/transparent"
+        android:numColumns="3"
+        android:scrollingCache="false"
+        android:smoothScrollbar="false"
+        android:stretchMode="columnWidth"
+        android:verticalSpacing="20dip" />
+
+    <RelativeLayout
+        android:id="@+id/rl_button"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/rl_title"
+        android:gravity="center_vertical"
+        android:visibility="gone" >
+
+        <Button
+            android:id="@+id/btn_type_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/type_1"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+</RelativeLayout>

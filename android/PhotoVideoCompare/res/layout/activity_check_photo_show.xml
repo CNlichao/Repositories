@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:background="@drawable/background" >
+
+    <RelativeLayout
+        android:id="@+id/rl_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/titleback" >
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/photo_compare_title"
+            android:textColor="@android:color/white" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rl_title"
+        android:paddingBottom="10dip" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <RelativeLayout
+                android:id="@+id/rl_check_picture"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true" >
+
+                <TextView
+                    android:id="@+id/tv_cur_photo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:text="@string/cur_photo" />
+
+                <ImageView
+                    android:id="@+id/iv_cur_picture"
+                    android:layout_width="150dip"
+                    android:layout_height="150dip"
+                    android:layout_below="@+id/tv_cur_photo"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="5dip"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/tv_before_photoes"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/iv_cur_picture"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="5dip"
+                    android:text="@string/before_photoes" />
+
+                <RelativeLayout
+                    android:id="@+id/ph_baby_layout"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tv_before_photoes"
+                    android:layout_marginTop="5dip"
+                    android:visibility="visible" >
+
+                    <ImageView
+                        android:id="@+id/ph_left_dir"
+                        android:layout_width="20dip"
+                        android:layout_height="20dip"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="10dip"
+                        android:src="@drawable/btn_gallery_left_select" />
+
+                    <ImageView
+                        android:id="@+id/ph_right_dir"
+                        android:layout_width="20dip"
+                        android:layout_height="20dip"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="10dip"
+                        android:src="@drawable/btn_gallery_right_select" />
+
+                    <Gallery
+                        android:id="@+id/ph_gallery"
+                        android:layout_width="300dip"
+                        android:layout_height="300dip"
+                        android:layout_centerHorizontal="true" />
+                </RelativeLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/rl_check_picture"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="10dip"
+                android:layout_marginTop="5dip" >
+
+                <Button
+                    android:id="@+id/btn_recamera"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/chongpai" />
+
+                <Button
+                    android:id="@+id/btn_next"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/btn_recamera"
+                    android:background="@drawable/xiayibu" />
+
+                <Button
+                    android:id="@+id/btn_verification_no_pass"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/btn_next"
+                    android:background="@drawable/yanzhengbutongguo" />
+            </RelativeLayout>
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

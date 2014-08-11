@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="opinion_array">
+        <item>通过</item>
+        <item>不通过</item>
+    </string-array>
+
+</resources>

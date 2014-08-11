@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="dealstep_array">
+        <item>发文秘</item>
+        <item>发征求意见</item>
+        <item>退回拟稿人</item>
+    </string-array>
+
+</resources>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="10dip"
+    android:paddingRight="10dip" >
+
+    <TextView
+        android:id="@+id/tv_name"
+        android:layout_width="60dip"
+        android:layout_height="wrap_content"
+        android:text="@string/name"
+        android:layout_centerVertical="true" />
+    
+    <Button
+        android:id="@+id/btn_verification"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/yanzheng"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true" />
+
+    <RelativeLayout
+        android:id="@+id/rl_sfzh_area"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/tv_name"
+        android:layout_toLeftOf="@+id/btn_verification"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="10dip"
+        android:layout_marginRight="10dip" >
+
+        <TextView
+            android:id="@+id/tv_sfzh"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/sfzh" />
+
+        <TextView
+            android:id="@+id/tv_area"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_sfzh"
+            android:text="@string/area" />
+    </RelativeLayout>  
+
+</RelativeLayout>

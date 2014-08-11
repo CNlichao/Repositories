@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="position_array">
+        <item>局长</item>
+        <item>副局长</item>
+        <item>副巡视员</item>
+        <item>处长</item>
+        <item>副处长</item>
+        <item>主任</item>
+        <item>副主任</item>
+    </string-array>
+
+</resources>
