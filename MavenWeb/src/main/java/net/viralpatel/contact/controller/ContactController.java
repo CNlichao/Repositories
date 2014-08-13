@@ -28,7 +28,7 @@ public class ContactController {
         return "contact";
     }
  
-    @RequestMapping(value = "/add", method = RequestMethod.POST)
+    @RequestMapping(value = "/contact/add", method = RequestMethod.POST)
     public String addContact(@ModelAttribute("contact")
     Contact contact, BindingResult result) {
  
